@@ -1,0 +1,40 @@
+Nguyễn Dương Hồng Diệu
+#include<iostream>
+#include<math.h>
+#include<stdio.h>
+using namespace std;
+int main(){
+    float a,b, c,delta,x,x1,x2;
+    cin>>a>>b>>c;
+    if(a==0){
+        if(b==0){
+            if(c==0){
+                cout << "Phuong trinh vo so nghiem" << endl;
+            }
+            else{
+                cout << "Phuong trinh vo nghiem" << endl;
+            }
+        }
+        else{
+            cout << "Phuong trinh co nghiem duy nhat: " << -c/b << endl;
+        }
+    }
+    else {
+        delta=(b*b)-4*a*c;
+        if(delta >0) {
+            delta = sqrt(delta);
+            x1 = (-b + delta) / (2*a);
+            x2 = (-b - delta) / (2*a);
+            cout<<x1<<endl<< x2;
+        } 
+        else if(delta==0) cout<<(-b/(2*a));
+        else cout<<"Phuong trinh vo nghiem";
+        return 0;
+        
+        
+    
+    }
+        
+    
+    return 0;
+}
